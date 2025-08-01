@@ -1,0 +1,110 @@
+.img {
+    background-position: center;
+    background-image: url("https://th.bing.com/th/id/R.3cc1e54074877ad57fb30d801c3c5394?rik=ul6wHVIW0lNgmQ&pid=ImgRaw&r=0");
+    background-size:cover ;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.borda {
+  background-color: rgba(38, 43, 44, 0.75);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+  backdrop-filter: blur(5px); 
+  border: 1px solid rgb(255, 255, 255); 
+  max-width: 400px;
+  width: 90%;
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.logintexto{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.labels{
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+input{
+    width: 350px;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+button{
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    border: 1px solid ;
+    color: black;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+.logintexto h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffff;
+  text-shadow:
+    0 0 2px #ffff,
+    0 0 4px #ffff,
+    0 0 6px #ffff;
+
+  animation: brilho-aqua-suave 4s ease-in-out infinite;
+}
+
+@keyframes brilho-aqua-suave {
+  0%, 100% {
+    text-shadow:
+      0 0 2px #ffff,
+      0 0 4px #ffff,
+      0 0 6px #ffff;
+  }
+  50% {
+    text-shadow:
+      0 0 1px #ffff,
+      0 0 2px #ffff,
+      0 0 4px #ffff;
+  }
+}
+input {
+  padding: 8px;
+  border: 2px solid #ffff;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  outline: none;
+  color: #000;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+  box-shadow: 0 0 6px #ffff;
+}
+
